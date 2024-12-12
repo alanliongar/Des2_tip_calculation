@@ -9,28 +9,26 @@
     tools:context=".MainActivity">
 
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cálculo de Gorjeta"
+        android:text="Tip calculator"
         android:textColor="@color/black"
+        android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/valor_conta"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textSize="45sp"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
+        android:id="@+id/valor_conta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor da conta"
+        android:text="Bill amount"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:id="@+id/valor_conta"
         app:layout_constraintBottom_toTopOf="@id/valor_L"
         app:layout_constraintEnd_toEndOf="@id/valor_L"
         app:layout_constraintStart_toStartOf="@id/valor_L" />
@@ -54,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_underline"
-            android:hint="Valor"
+            android:hint="Value"
             android:inputType="numberDecimal"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -75,7 +73,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
             android:padding="5dp"
-            android:text="Quantidade\nde Pessoas"
+            android:text="Number of\npeople"
+            android:textAlignment="center"
             android:textColor="@color/on_background"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/tv_qtd"
@@ -103,8 +102,8 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="TextView"
-            android:textStyle="bold"
             android:textColor="@color/on_background"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/button_P"
             app:layout_constraintStart_toEndOf="@id/button_M"
@@ -131,7 +130,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:text="Taxas"
+        android:text="Tip rate"
         android:textColor="@color/on_background"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/vg_botoes_perc"
@@ -181,7 +180,6 @@
             android:text="20%"
             android:textColor="@color/text"
             android:textStyle="bold"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/quinze"
             app:layout_constraintTop_toTopOf="parent" />
@@ -196,18 +194,18 @@
             android:text="25%"
             android:textColor="@color/text"
             android:textStyle="bold"
-            tools:backgroundTint="@color/button_selected"
             app:layout_constraintBottom_toBottomOf="parent"
-
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/dez" />
+
+            app:layout_constraintTop_toBottomOf="@id/dez"
+            tools:backgroundTint="@color/button_selected" />
 
         <Button
             android:id="@+id/outros"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/secondary"
-            android:text="Outra taxa"
+            android:text="Other"
             android:textColor="@color/text"
             android:textStyle="bold"
             android:visibility="visible"
@@ -218,18 +216,18 @@
 
 
             />
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/customTaxa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Digite taxa %"
+            android:hint="Type rate %"
             android:inputType="numberDecimal"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@id/outros"
             app:layout_constraintEnd_toEndOf="@id/outros"
             app:layout_constraintStart_toStartOf="@id/outros"
-            app:layout_constraintTop_toTopOf="@id/outros"
-            />
+            app:layout_constraintTop_toTopOf="@id/outros" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -242,7 +240,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity=""
-        android:text="Valor da conta\n\nValor da gorjeta\n\nValor total"
+        android:text="Bill value\n\nTip value\n\nTotal value"
         android:textColor="@color/primary_variant"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -256,7 +254,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="right"
-        android:text="R$ 00,00\n\nR$ 00,00\n\nR$ 00,00"
+        android:text="$ 00,00\n\n$ 00,00\n\n$ 00,00"
         android:textColor="@color/primary_variant"
         android:textSize="30sp"
         android:textStyle="bold"

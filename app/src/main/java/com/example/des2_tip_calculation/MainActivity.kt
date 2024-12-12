@@ -146,9 +146,9 @@ class MainActivity : AppCompatActivity() {
                 valor_total = "%.2f".format((valorr / pessoass) + (valorr / pessoass) * percentuall)
             }
             resultado.text =
-                "R$ $valor_conta\n\nR$ $valor_gorjeta\n\nR$ $valor_total"
+                "$ $valor_conta\n\n$ $valor_gorjeta\n\n$ $valor_total"
         } else {
-            resultado.text = "R$ 00,00\n\nR$ 00,00\n\nR$ 00,00"
+            resultado.text = "$ 00,00\n\n$ 00,00\n\n$ 00,00"
         }
     }
 }
