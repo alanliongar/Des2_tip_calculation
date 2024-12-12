@@ -1,5 +1,5 @@
-# Calculadora de gorjeta
-Esse projeto é um aplicativo android nativo, desenvolvido com a linguagem de programação Kotlin, tem como principal funcionalidade fazer o cálculo de conta (com gorjeta) dado um valor de conta, quantidade de pessoas e percentual de gorjeta.
+# Tip calculator
+This project is a native Android application developed using the Kotlin programming language. Its main functionality is to calculate the bill (including the tip) based on a bill amount, number of people, and tip percentage.
 
 ## :camera_flash: Screenshots
 <p float="left">
@@ -7,7 +7,7 @@ Esse projeto é um aplicativo android nativo, desenvolvido com a linguagem de pr
   <img src="https://github.com/alanliongar/Des2_tipo_calculation/blob/master/TipCalculation02.png" width="250" /> 
 </p>
 
-## Tecnologias
+## Tecnologies
 - Activity
 - ViewGroups
   - ConstraintLayout
